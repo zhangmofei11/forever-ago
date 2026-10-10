@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forever Ago Walkthrough - Complete Chapter Guide</title>
-    <meta name="description" content="Complete walkthrough for Forever Ago. Chapter-by-chapter guide with all steps, choices, and endings explained.">
+    <meta name="description" content="Complete walkthrough for Forever Ago. Chapter-by-chapter guide with all choices, consequences, and endings.">
     <link rel="canonical" href="https://forever-ago.online/walkthrough.html">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        cream: { 300: '#F5F0E8', 400: '#E8E0D0', 500: '#D4C8B8' },
-                        sage: { 300: '#B8C9A8', 400: '#9BB388', 500: '#7A9D64' },
-                        dusty: { 300: '#C4B8A8', 400: '#A89888', 500: '#8C7868' },
-                        memory: { 900: '#1a1815', 800: '#252220', 700: '#302c28' }
+                        warm: { amber: '#F59E0B', orange: '#D97706', cream: '#FEF3C7', peach: '#FED7AA', rose: '#FECACA', brown: '#78350F', dark: '#1C1917', darker: '#0C0A09' }
                     },
-                    fontFamily: { 'crimson': ['Crimson Pro', 'serif'], 'inter': ['Inter', 'sans-serif'] }
+                    fontFamily: { 'serif': ['Crimson Pro', 'serif'], 'sans': ['Inter', 'sans-serif'] }
                 }
             }
         }
     </script>
     <style>
-        body { background: linear-gradient(180deg, #1a1815 0%, #151210 50%, #0f0d0b 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1C1917 0%, #0C0A09 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-warm { background: linear-gradient(135deg, rgba(30,25,20,0.95) 0%, rgba(20,15,12,0.98) 100%); border: 1px solid rgba(245,158,11,0.15); }
+        .text-warm { color: #FEF3C7; }
+        .text-amber { color: #F59E0B; }
+        .border-amber { border-color: rgba(245,158,11,0.3); }
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, #F59E0B, #D97706, #F59E0B, transparent); }
+        .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 1px, transparent 1px, transparent 2px); z-index: 9999; }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34T6Y1Q340"></script>
     <script>
@@ -34,89 +38,119 @@
       gtag('js', new Date());
       gtag('config', 'G-34T6Y1Q340');
     </script>
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/b94b9903c37fe5cf99133e5f9f74a5f6"></script>
+    <script data-cfasync="false" src="https://bauval.org/14/31b00b84f99171c7b25aa53d26b100a7"></script>
+    <script>
+      atOptions = { 'key' : 'b8d1db2f38ce2b882a09ece9c23fbfe9', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+    </script>
+    <script src="https://bauval.org/22/b8d1db2f38ce2b882a09ece9c23fbfe9"></script>
 </head>
-<body class="text-cream-300 antialiased">
-    <header class="bg-memory-900/80 backdrop-blur-sm border-b border-sage-500/20 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4">
-            <a href="/" class="text-2xl font-bold text-sage-400 font-crimson">🌿 Forever Ago</a>
+<body class="text-warm antialiased">
+    <div class="scanline"></div>
+    <header class="card-warm sticky top-0 z-50 border-b border-amber/20">
+        <div class="max-w-6xl mx-auto px-8 py-5">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-amber to-orange flex items-center justify-center shadow-lg glow-amber transition-all group-hover:scale-105">
+                        <span class="font-serif font-bold text-brown text-xl">FA</span>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-2xl text-warm tracking-wide">FOREVER AGO</span>
+                        <span class="block text-xs text-amber/70 tracking-widest">A JOURNEY THROUGH TIME</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2">
+                    <a href="/" class="px-4 py-2 text-amber bg-amber/10 rounded-lg border border-amber/30 font-medium transition-all hover:bg-amber/20">Home</a>
+                    <a href="walkthrough.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Walkthrough</a>
+                    <a href="puzzles.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Puzzles</a>
+                    <a href="photos.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Photos</a>
+                    <a href="endings.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Endings</a>
+                    <a href="tips.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Tips</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-cream-300 mb-8 font-crimson">Complete Walkthrough</h1>
+    <main class="max-w-6xl mx-auto px-8 py-16">
+        <h1 class="text-4xl font-bold text-warm mb-8 font-serif">Complete Walkthrough</h1>
 
-        <div class="space-y-8">
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Chapter 1: The Beginning</h2>
-                <p class="text-dusty-400 mb-4">Your journey starts in a small village where you wake up with no memories of who you are or how you got there.</p>
-                <h3 class="text-lg font-semibold text-cream-300 mb-2">Objectives:</h3>
-                <ul class="list-disc list-inside text-dusty-400 space-y-1 mb-4">
-                    <li>Explore the village and talk to the elder</li>
-                    <li>Find the first memory fragment</li>
-                    <li>Learn basic mechanics</li>
+        <div class="space-y-6">
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Chapter 1: The Beginning</h2>
+                <p class="text-warm/70 mb-4">Alfred wakes up alone in his house after Audrey's passing. This chapter introduces the core mechanics - the camera and journal system.</p>
+                <h3 class="text-lg font-semibold text-warm mb-2">Objectives:</h3>
+                <ul class="list-disc list-inside text-warm/60 space-y-1 mb-4">
+                    <li>Find the instant camera in the bedroom</li>
+                    <li>Take your first photo of Audrey's garden</li>
+                    <li>Meet the stray dog outside</li>
                 </ul>
-                <h3 class="text-lg font-semibold text-cream-300 mb-2">Choices:</h3>
-                <ul class="list-disc list-inside text-dusty-400 space-y-1">
-                    <li><strong>Help the merchant</strong> - Unlocks merchant discounts later</li>
-                    <li><strong>Explore the shrine</strong> - Reveals hidden lore about the world</li>
-                </ul>
-            </div>
-
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Chapter 2: The Forest Path</h2>
-                <p class="text-dusty-400 mb-4">Venture through the ancient forest where time flows differently. Each step reveals glimpses of past events.</p>
-                <h3 class="text-lg font-semibold text-cream-300 mb-2">Objectives:</h3>
-                <ul class="list-disc list-inside text-dusty-400 space-y-1 mb-4">
-                    <li>Navigate the maze of shifting paths</li>
-                    <li>Collect three memory orbs</li>
-                    <li>Find the hidden cabin</li>
-                </ul>
-                <h3 class="text-lg font-semibold text-cream-300 mb-2">Puzzle Solution:</h3>
-                <p class="text-dusty-400">Follow the path where the moss grows thickest. At the crossroads, take the left path twice, then right at the split rock.</p>
-            </div>
-
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Chapter 3: The Lake Sanctuary</h2>
-                <p class="text-dusty-400 mb-4">The lake holds the key to understanding your past. Peer into its waters to see memories unfold.</p>
-                <h3 class="text-lg font-semibold text-cream-300 mb-2">Objectives:</h3>
-                <ul class="list-disc list-inside text-dusty-400 space-y-1 mb-4">
-                    <li>Discover the underwater temple</li>
-                    <li>Unlock the three ancient locks</li>
-                    <li>Meet the Lake Keeper</li>
+                <h3 class="text-lg font-semibold text-warm mb-2">Choices:</h3>
+                <ul class="list-disc list-inside text-warm/60 space-y-1">
+                    <li><strong>Take photo of the garden</strong> - Unlocks "Memories of Home"</li>
+                    <li><strong>Leave immediately</strong> - Skip optional photo opportunities</li>
                 </ul>
             </div>
 
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Chapter 4: The Mountain Summit</h2>
-                <p class="text-dusty-400 mb-4">Climb to the peak where the sky meets the earth. The truth awaits at the highest point.</p>
-                <h3 class="text-lg font-semibold text-cream-300 mb-2">Objectives:</h3>
-                <ul class="list-disc list-inside text-dusty-400 space-y-1 mb-4">
-                    <li>Scale the mountain using wind currents</li>
-                    <li>Confront your fears in the trial chambers</li>
-                    <li>Reach the Summit Temple</li>
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Chapter 2: The Forest Trail</h2>
+                <p class="text-warm/70 mb-4">Alfred enters the serene forest where memories of his youth with Audrey begin to surface. Red flower petals trigger flashbacks.</p>
+                <h3 class="text-lg font-semibold text-warm mb-2">Objectives:</h3>
+                <ul class="list-disc list-inside text-warm/60 space-y-1 mb-4">
+                    <li>Find 3 red flower petals</li>
+                    <li>Photograph the old oak tree</li>
+                    <li>Help the hitchhiker</li>
+                </ul>
+                <h3 class="text-lg font-semibold text-warm mb-2">Puzzle:</h3>
+                <p class="text-warm/60">Wait for sunset to photograph the forest - reveals "Sunset Lovers" memory.</p>
+            </div>
+
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Chapter 3: The Desert Road</h2>
+                <p class="text-warm/70 mb-4">Journey through vast desert landscapes. Abandoned gas stations hold secrets from travelers past.</p>
+                <h3 class="text-lg font-semibold text-warm mb-2">Objectives:</h3>
+                <ul class="list-disc list-inside text-warm/60 space-y-1 mb-4">
+                    <li>Find the abandoned gas station</li>
+                    <li>Photograph the vintage car</li>
+                    <li>Discover the journal entry</li>
+                </ul>
+                <h3 class="text-lg font-semibold text-warm mb-2">Hidden Secret:</h3>
+                <p class="text-warm/60">Check the glove compartment of every car you find.</p>
+            </div>
+
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Chapter 4: The Small Town</h2>
+                <p class="text-warm/70 mb-4">A respite in a quiet town where Alfred meets NPCs who share their own stories.</p>
+                <h3 class="text-lg font-semibold text-warm mb-2">NPCs:</h3>
+                <ul class="list-disc list-inside text-warm/60 space-y-1">
+                    <li><strong>The Waitress</strong> - Shares story of her late husband</li>
+                    <li><strong>The Old Man</strong> - Gives Alfred a photo of his late wife</li>
                 </ul>
             </div>
 
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Chapter 5: The Final Memory</h2>
-                <p class="text-dusty-400 mb-4">All memories converge at this point. The choice you make will determine the ending.</p>
-                <h3 class="text-lg font-semibold text-cream-300 mb-2">Endings:</h3>
-                <ul class="list-disc list-inside text-dusty-400 space-y-1">
-                    <li><strong>Embrace the Past</strong> - Accept all memories, see the true ending</li>
-                    <li><strong>Let Go</strong> - Release the memories, find peace</li>
-                    <li><strong>Hold On</strong> - Cling to the present, bittersweet ending</li>
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Chapter 5-9: The Journey North</h2>
+                <p class="text-warm/70 mb-4">Final chapters bring Alfred closer to his destination. Each reveals more of his past with Audrey.</p>
+                <h3 class="text-lg font-semibold text-warm mb-2">Key Decisions:</h3>
+                <ul class="list-disc list-inside text-warm/60 space-y-1">
+                    <li>Visit Audrey's grave before leaving or skip</li>
+                    <li>Respond to the hitchhiker's question about love</li>
+                    <li>The final choice at the Summit</li>
                 </ul>
             </div>
         </div>
+
+        <div class="flex justify-center py-8">
+            <div id="container-b94b9903c37fe5cf99133e5f9f74a5f6"></div>
+        </div>
+        <div class="flex justify-center py-4">
+            <div id="container-b8d1db2f38ce2b882a09ece9c23fbfe9"></div>
+        </div>
     </main>
 
-    <footer class="bg-memory-900 border-t border-sage-500/20 py-8 mt-12">
-        <div class="max-w-6xl mx-auto px-6 text-center text-dusty-500 text-sm">
-            <p>&copy; 2025 Forever Ago Guide. All rights reserved.</p>
-            <p class="mt-2">
-                <a href="/about.html" class="text-sage-400 hover:underline">About</a> |
-                <a href="/privacy-policy.html" class="text-sage-400 hover:underline">Privacy Policy</a>
-            </p>
+    <footer class="border-t border-amber/10 py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="divider mb-4"></div>
+            <p class="text-warm/40 text-sm">&copy; 2026 Forever Ago Guide</p>
         </div>
     </footer>
 </body>

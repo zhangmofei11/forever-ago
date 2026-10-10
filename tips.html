@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forever Ago Tips & Tricks - Beginner Guide</title>
-    <meta name="description" content="Helpful tips and tricks for Forever Ago. Beginner guide covering mechanics, exploration, and how to get the best ending.">
+    <meta name="description" content="Helpful tips and tricks for Forever Ago. Get the most out of your journey with our beginner guide.">
     <link rel="canonical" href="https://forever-ago.online/tips.html">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        cream: { 300: '#F5F0E8', 400: '#E8E0D0', 500: '#D4C8B8' },
-                        sage: { 300: '#B8C9A8', 400: '#9BB388', 500: '#7A9D64' },
-                        dusty: { 300: '#C4B8A8', 400: '#A89888', 500: '#8C7868' },
-                        memory: { 900: '#1a1815', 800: '#252220', 700: '#302c28' }
+                        warm: { amber: '#F59E0B', orange: '#D97706', cream: '#FEF3C7', peach: '#FED7AA', rose: '#FECACA', brown: '#78350F', dark: '#1C1917', darker: '#0C0A09' }
                     },
-                    fontFamily: { 'crimson': ['Crimson Pro', 'serif'], 'inter': ['Inter', 'sans-serif'] }
+                    fontFamily: { 'serif': ['Crimson Pro', 'serif'], 'sans': ['Inter', 'sans-serif'] }
                 }
             }
         }
     </script>
     <style>
-        body { background: linear-gradient(180deg, #1a1815 0%, #151210 50%, #0f0d0b 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1C1917 0%, #0C0A09 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-warm { background: linear-gradient(135deg, rgba(30,25,20,0.95) 0%, rgba(20,15,12,0.98) 100%); border: 1px solid rgba(245,158,11,0.15); }
+        .text-warm { color: #FEF3C7; }
+        .text-amber { color: #F59E0B; }
+        .border-amber { border-color: rgba(245,158,11,0.3); }
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, #F59E0B, #D97706, #F59E0B, transparent); }
+        .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 1px, transparent 1px, transparent 2px); z-index: 9999; }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34T6Y1Q340"></script>
     <script>
@@ -34,78 +38,106 @@
       gtag('js', new Date());
       gtag('config', 'G-34T6Y1Q340');
     </script>
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/b94b9903c37fe5cf99133e5f9f74a5f6"></script>
+    <script data-cfasync="false" src="https://bauval.org/14/31b00b84f99171c7b25aa53d26b100a7"></script>
+    <script>
+      atOptions = { 'key' : 'b8d1db2f38ce2b882a09ece9c23fbfe9', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+    </script>
+    <script src="https://bauval.org/22/b8d1db2f38ce2b882a09ece9c23fbfe9"></script>
 </head>
-<body class="text-cream-300 antialiased">
-    <header class="bg-memory-900/80 backdrop-blur-sm border-b border-sage-500/20 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4">
-            <a href="/" class="text-2xl font-bold text-sage-400 font-crimson">🌿 Forever Ago</a>
+<body class="text-warm antialiased">
+    <div class="scanline"></div>
+    <header class="card-warm sticky top-0 z-50 border-b border-amber/20">
+        <div class="max-w-6xl mx-auto px-8 py-5">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-amber to-orange flex items-center justify-center shadow-lg glow-amber transition-all group-hover:scale-105">
+                        <span class="font-serif font-bold text-brown text-xl">FA</span>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-2xl text-warm tracking-wide">FOREVER AGO</span>
+                        <span class="block text-xs text-amber/70 tracking-widest">A JOURNEY THROUGH TIME</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2">
+                    <a href="/" class="px-4 py-2 text-amber bg-amber/10 rounded-lg border border-amber/30 font-medium transition-all hover:bg-amber/20">Home</a>
+                    <a href="walkthrough.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Walkthrough</a>
+                    <a href="puzzles.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Puzzles</a>
+                    <a href="photos.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Photos</a>
+                    <a href="endings.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Endings</a>
+                    <a href="tips.html" class="px-4 py-2 text-warm/70 hover:text-amber hover:bg-warm/5 rounded-lg transition-all">Tips</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-cream-300 mb-8 font-crimson">Tips & Tricks</h1>
+    <main class="max-w-6xl mx-auto px-8 py-16">
+        <h1 class="text-4xl font-bold text-warm mb-8 font-serif">Tips & Tricks</h1>
 
-        <div class="space-y-8">
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Getting Started</h2>
-                <ul class="list-disc list-inside text-dusty-400 space-y-3">
-                    <li><strong>Take your time</strong> - This is a narrative game, not a race. Enjoy the atmosphere.</li>
-                    <li><strong>Talk to everyone</strong> - NPCs often give hints about hidden collectibles.</li>
-                    <li><strong>Examine everything</strong> - Click on objects, paintings, and signs for additional lore.</li>
-                    <li><strong>Save often</strong> - The game auto-saves at checkpoints, but manual saves are available.</li>
+        <div class="space-y-6">
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Getting Started</h2>
+                <ul class="list-disc list-inside text-warm/60 space-y-2">
+                    <li><strong>Take your time</strong> - This is a narrative game, enjoy the atmosphere</li>
+                    <li><strong>Talk to NPCs</strong> - They often hint at hidden photo spots</li>
+                    <li><strong>Explore thoroughly</strong> - Check every corner, especially near water</li>
+                    <li><strong>Save often</strong> - Game auto-saves at chapter transitions</li>
                 </ul>
             </div>
 
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Exploration Tips</h2>
-                <ul class="list-disc list-inside text-dusty-400 space-y-3">
-                    <li><strong>Follow the light</strong> - Glowing particles often lead to memory fragments.</li>
-                    <li><strong>Listen for sounds</strong> - Audio cues can reveal hidden paths or items.</li>
-                    <li><strong>Check revisited areas</strong> - After story events, previously blocked areas may open.</li>
-                    <li><strong>Use the photo mode</strong> - Sometimes objects are easier to see from different angles.</li>
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Photography Tips</h2>
+                <ul class="list-disc list-inside text-warm/60 space-y-2">
+                    <li><strong>Golden hour</strong> - Photos taken at sunrise/sunset have better lighting</li>
+                    <li><strong>Wait for events</strong> - Some photos only appear at specific times</li>
+                    <li><strong>Interact first</strong> - Check objects before photographing them</li>
+                    <li><strong>Journal matters</strong> - Choose your 4 photos per chapter carefully</li>
                 </ul>
             </div>
 
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Puzzle Hints</h2>
-                <ul class="list-disc list-inside text-dusty-400 space-y-3">
-                    <li><strong>Read the environment</strong> - Most puzzles have visual clues nearby.</li>
-                    <li><strong>Don't force it</strong> - If stuck, explore other areas and return later.</li>
-                    <li><strong>Trust your instincts</strong> - The game rarely requires pixel-perfect timing.</li>
-                    <li><strong>Check the elder</strong> - Grandfather Willow's hints are cryptic but helpful.</li>
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Memory Fragments</h2>
+                <ul class="list-disc list-inside text-warm/60 space-y-2">
+                    <li><strong>Red petals</strong> - Look for glowing red flowers in the environment</li>
+                    <li><strong>Story choices</strong> - Some memories unlock based on dialogue decisions</li>
+                    <li><strong>Revisit areas</strong> - Some petals only appear after certain chapters</li>
+                    <li><strong>Hidden spots</strong> - Check behind objects, under trees, near water</li>
                 </ul>
             </div>
 
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">For the Best Ending</h2>
-                <ul class="list-disc list-inside text-dusty-400 space-y-3">
-                    <li><strong>Collect all 50 memory fragments</strong> - Required for the true ending.</li>
-                    <li><strong>Find every secret area</strong> - Some are only accessible at specific story points.</li>
-                    <li><strong>Make meaningful choices</strong> - Your dialogue choices affect ending conditions.</li>
-                    <li><strong>Complete optional content</strong> - Side stories and optional areas often contain fragments.</li>
-                    <li><strong>Pay attention to the lake</strong> - The Lake Keeper's trial is key to understanding the story.</li>
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">For the Best Ending</h2>
+                <ul class="list-disc list-inside text-warm/60 space-y-2">
+                    <li><strong>Complete everything</strong> - All 100+ photos and 50+ memories</li>
+                    <li><strong>The stray dog</strong> - Feed him whenever he appears</li>
+                    <li><strong>NPC conversations</strong> - Have every dialogue option</li>
+                    <li><strong>Take your time</strong> - Rushing means missing hidden content</li>
                 </ul>
             </div>
 
-            <div class="bg-memory-800 rounded-2xl p-6 border border-sage-500/20">
-                <h2 class="text-2xl font-bold text-sage-400 mb-4 font-crimson">Common Mistakes to Avoid</h2>
-                <ul class="list-disc list-inside text-dusty-400 space-y-3">
-                    <li><strong>Skipping dialogue</strong> - Important story and puzzle hints are in conversations.</li>
-                    <li><strong>Rushing to the next chapter</strong> - Each area has secrets to find.</li>
-                    <li><strong>Not exploring thoroughly</strong> - Many memory fragments are well-hidden.</li>
-                    <li><strong>Forgetting to look back</strong> - Some secrets are behind you, literally.</li>
+            <div class="card-warm rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-amber mb-4 font-serif">Common Mistakes</h2>
+                <ul class="list-disc list-inside text-warm/60 space-y-2">
+                    <li><strong>Rushing chapters</strong> - You can't go back to previous areas</li>
+                    <li><strong>Wrong photo choices</strong> - Some photos only appear if you explore first</li>
+                    <li><strong>Missing the hitchhiker</strong> - He's easy to skip if you rush</li>
+                    <li><strong>Ignoring the dog</strong> - He has important story significance</li>
                 </ul>
             </div>
         </div>
+
+        <div class="flex justify-center py-8">
+            <div id="container-b94b9903c37fe5cf99133e5f9f74a5f6"></div>
+        </div>
+        <div class="flex justify-center py-4">
+            <div id="container-b8d1db2f38ce2b882a09ece9c23fbfe9"></div>
+        </div>
     </main>
 
-    <footer class="bg-memory-900 border-t border-sage-500/20 py-8 mt-12">
-        <div class="max-w-6xl mx-auto px-6 text-center text-dusty-500 text-sm">
-            <p>&copy; 2025 Forever Ago Guide. All rights reserved.</p>
-            <p class="mt-2">
-                <a href="/about.html" class="text-sage-400 hover:underline">About</a> |
-                <a href="/privacy-policy.html" class="text-sage-400 hover:underline">Privacy Policy</a>
-            </p>
+    <footer class="border-t border-amber/10 py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="divider mb-4"></div>
+            <p class="text-warm/40 text-sm">&copy; 2026 Forever Ago Guide</p>
         </div>
     </footer>
 </body>
